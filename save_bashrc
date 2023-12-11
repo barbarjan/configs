@@ -1,0 +1,28 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias ls='ls --color=auto'
+# PS1='\e[34m\]\u\[\e[m\]@\h \W\$ '
+# PS1='\[\e[33m\]\u\[\e[m\]@\h \W\$ '
+# PS1='\[\e[33m\]\u\[\e[m\]@\h \W\$ '
+PS1='\u@\h \[\e[33m\]\W\e[m\] '
+# PS1='\[\e[38;5;208m\]\u@\h \W\$ \[\e[0m\]'
+
+alias ssh='TERM=xterm ssh'
+
+#custom aliases
+alias db='sudo systemctl start postgresql && sudo -iu postgres'
+alias eapi='cd ~/AI && source aivenv/bin/activate && cd EnergyAPI'
+alias c='clear'
+alias p='python'
+alias weather='curl https://wttr.in/Warsaw'
+alias isadre='cd ~/Isadre && source venv/bin/activate'
+alias scrivano='cd ~/Downloads/Scrivano_0.17.7 && ./Scrivano.sh'
+alias vidpy='cd ~/Videos/tutorials/python'
+alias wifi='iwctl station wlan0 scan && iwctl station wlan0 show && sleep 2s && iwctl station wlan0 get-networks'
+alias monitor='echo "" && echo "--- HDMI and eDP ---" && xrandr -q | grep HDMI && xrandr -q | grep eDP && echo "" &&  echo "--- reloading bspwmrc ---" && ~/.config/bspwm/bspwmrc'
+
