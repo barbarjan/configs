@@ -1,0 +1,42 @@
+[font]
+size = 10.0
+
+[font.bold]
+family = "Terminess Nerd Font Mono"
+style = "Bold"
+
+[font.bold_italic]
+family = "Terminess Nerd Font Mono"
+style = "Bold Italic"
+
+[font.italic]
+family = "Terminess Nerd Font Mono"
+style = "Italic"
+
+[font.normal]
+family = "Terminess Nerd Font Mono"
+style = "Regular"
+
+
+
+# [font.bold]
+# family = "Terminus"
+# style = "Bold"
+#
+# [font.bold_italic]
+# family = "Terminus"
+# style = "Bold Italic"
+#
+# [font.italic]
+# family = "Terminus"
+# style = "Italic"
+#
+# [font.normal]
+# family = "Terminus"
+# style = "Regular"
+
+
+[keyboard]
+bindings = [
+   { key = "Return", mods = "Control|Shift", action = "SpawnNewInstance" }
+]
